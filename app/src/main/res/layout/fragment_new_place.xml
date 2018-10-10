@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        tools:context=".NewPlaceFragment">
+
+        <EditText
+            android:id="@+id/place_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/address_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/website_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Website"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/govt_office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Government Office" />
+
+            <RadioButton
+                android:id="@+id/attraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Attraction" />
+
+            <RadioButton
+                android:id="@+id/accommodation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accommodation" />
+
+            <RadioButton
+                android:id="@+id/religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Religious Centre" />
+
+            <RadioButton
+                android:id="@+id/hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital" />
+
+            <RadioButton
+                android:id="@+id/shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopping Centre" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/brief_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Brief Description"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/image_upload_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upload image" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Go Ibaban</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ibadan">Ìbàdàn</string>
+
+    <string name="ibadan_slogan">The trademark city of brown roofs</string>
+
+    <string name="welcome_page_btn_title">Let\'s Go On Tour</string>
+
+    <string name="home_label">Home</string>
+
+    <!--HomePage menu list-->
+    <string name="govt">Government Offices</string>
+    <string name="attraction">Top Attractions</string>
+    <string name="shopping">Shopping Centres</string>
+    <string name="accommodation">Accommodation</string>
+    <string name="health">Hospitals</string>
+    <string name="religion">Religious Centres</string>
+    <string name="info">More Information</string>
+
+
+    <!--Accommodation: Places and Addresses-->
+    <string name="premier_hotel"> Premier Hotel</string>
+    <string name="premier_hotel_address">Oremeji Court, Mokola Hill</string>
+    <string name="premier_hotel_details">The Premier Hotel, Ibadan, a subsidiary of Odu\'a Heritage Company,
+        is one of the oldest and most prestigious hotels in Ibadan. Its central location on the peak of Mokola Hill
+        gives it a unique visibility hundreds of miles away,
+        both day and night –due in part to its white cladding and bright lighting. (Wikipedia)</string>
+    <string name="premier_hotel_website">www.premierhotelibadan.com</string>
+
+
+    <!--Government: Places and Addresses-->
+    <string name="state_secretariat"> State Secretariat</string>
+    <string name="state_secretariat_address">P.M.B 5129, Secretariat, Agodi</string>
+    <string name="state_secretariat_details">This is the permanent administrative office of the Oyo State Government.
+        Here, all state agencies and parastatals are quartered. As such, this is one of the most important place in the state.</string>
+    <string name="state_secretariat_website">https://oyostate.gov.ng</string>
+
+    <!--Attraction: Places and Addresses-->
+
+    <string name="cocoa_house"> Cocoa House</string>
+    <string name="cocoa_house_address">Dugbe</string>
+    <string name="cocoa_house_details">The first skyscraper building in Nigeria is cooperative building housing the headquarter of Cooperative bank Ibadan which is now Skye Bank. It is an eleven story building built is 1964.
+The Action Group (A.G) under the leadership of Chief Obafemi Awolowo conceived the idea of another skyscraper in the early 1960’s with the emergence of the 26 storey building which is Cocoa House. The present site of the building was at the time before it was built used by the Public Works Department (PWD) of the ministry of works which extended to the sketch building premises. It was once the tallest building in tropical Africa.
+It was built from the proceeds of Cocoa gotten in those years and its maiden name was ILE AWON AGBE upon its commissioning in 1965. A water fountain was provided to beautify the area and a cocoa tree indicating the building.The Cocoa House is been managed by WEMABOD Estates a subsidiary of the Western Nigerian Development Corporation(WNDC) with its Headquarters in Ikeja, It is now a subsidiary of the O’dua Investment Company. It hasn’t all been rosy at the Cocoa House as it was gutted by fire in 1985 and was renovated and reopened for use in 1992. At present, the Cocoa House is surrounded by Koko Dome, Heritage Mall, Banks, Nigerian Postal Service and other business outlets.
+The building itself house offices for major firms and broadcasting outfits. The last floor accommodates the O’dua Museum and Hall of fame which was commissioned by Professor Wole Soyinka in 2013.</string>
+    <string name="cocoa_house_website">http://www.oduainvestment.com.ng/locations/cocoa-house-ibadan/</string>
+    <!--Hospitals: Places and Addresses-->
+
+    <string name="uch"> University College Hospital (UCH), Ibadan</string>
+    <string name="uch_address">UCH Road.</string>
+    <string name="uch_details">The University College Hospital, (UCH) Ibadan was established by an August 1952 Act of Parliament in response to the need for the training of medical personnel and other healthcare professionals for the country and the West African Sub-Region. The establishment of the Hospital followed a Visitation Panel in 1951 to assess the clinical facilities for the clinical postings of medical students registered for M.B.B.S. degree of the University of London. The visitation panel, led by Dr. T.F. Hunt of the University of London rejected the enhanced facilities provided by the Government/Native Authority Hospital at Adeoyo, Ibadan following the establishment of a Faculty of Medicine in the University College, Ibadan (now University of Ibadan) in 1948.
+        The University College Hospital (UCH) was strategically located in Ibadan, then the largest city in West Africa which is also the seat of the first University in Nigeria. The physical development of the Hospital commenced in 1953 in its present site and was formally commissioned after completion on 20 November 1957. The University College Hospital, Ibadan was initially commissioned with 500-bed spaces. Currently, the hospital has 1,000 bed spaces and 200 examination couches with occupancy rates ranging from 65-70%. In addition to undergraduate medical programme (Based in the College of Medicine of the University of Ibadan), the UCH also provides for: Postgraduate Residency Training Programmes in all specialties of Internal Medicine, Surgery, Obstetrics and Gynecology, Pediatrics, Otorhinolaryngology, Ophthalmology, Anesthesia, Laboratory Medicine, Psychiatry, Community Medicine, General Medical Practice, Radiology, Radiotherapy and Dentistry. The University College Hospital also provides diploma /professional programmes in the School of Health Records and Statistics, Environmental Health Officers Tutors Course; Primary Health tutors Course, Nurse/Midwife/Public Health Nurse, Nurse Tutors Course, Post registration Courses in nursing e.g. Peri Operative nursing and Occupational Health Nursing.
+    Since its inception, the Hospital has trained over 6,000 Doctors, 501 Dentists, 4,513 Nurses, 2307 Midwives, 471 Peri-Operative nurses, 1062 Laboratory Scientist, 576 Environmental Health officers Tutors, 451 nurse/midwives/Public health educators, 326 Primary Health Care Tutors, 590 Community Health Officers, 640 Physiotherapists, 551 Health information Management Personnel (formally referred to as Medical Records Officers).
+    The management of the Hospital spurred by the Federal Government's efforts in refurbishing the teaching hospital has taken steps to widen the scope of services provided by the resuscitation of the open heart surgical procedure of the Hospital. In May 2006, a surgical team successfully performed open-heart surgery on three paediatric patients, an important landmark in medicine in Nigeria.
+    </string>
+    <string name="uch_website">https://uch-ibadan.org.ng</string>
+
+    <!--Religious Centres: Places and Addresses-->
+
+    <string name="religious_centres"> University of Ibadan Central Mosque</string>
+    <string name="religious_centres_address">Education-Benue road, University of Ibadan Campus.</string>
+    <string name="religious_centres_details"> The ultra-modern central mosque, which accommo-dates quite a large number of worshippers both from within and outside the University community, is open for the five daily obligatory prayers. There are also the Abadina Mosque, which serves the Abadina community, and the Obafemi Awolowo Hall Mosque, which serves the needs of Muslim students who live far away from the Central Mosque. These two mosques also open for the five daily obligatory prayers. The Chief Imam with the support of the Fatwah and Ceremonies Committee conducts Friday/Jum’ah services. Occasionally, reputable scholars and eminent Imams from outside the University are invited to lead the Jum’ah services.
+During the fasting month of Ramadan, special prayers, Tarawih, Qiyamu’l-Layl or Qiyamu Ramadhan are observed at night and in congrega-tion in each of these mosques. Muslim devotees from within and outside the University also gather in the Central Mosque to observe the I’tikaf in the last ten days of the month of fasting. The U.I Muslim community usually organises the annual Ramadan Lecture on such topical issues as politics, economics, globalization and Muslim - Christian relationship, which reputable Muslim scholars are invited to deliver. Spiritual gatherings are also arranged to mark the Laylatul-Qadr, the Night of Majesty – which commemorates the revelation of the Glorious Qur’an. The festival prayers of Id-el-Fitr and ‘Id-el-Adha are observed on the spacious lawn adjacent to the Mosque. The community also organizes programmes to mark Id-el-Maulid.
+The Mosque organizes a Qur’an reading class for students and other adult male and female members of the congregation who may have missed the opportunity to do this while young. In addition, the Mosque is a beehive of activities as it is open to Muslim worshippers who come for dhikr, tilawah, ta’lim and other devotional activities. There is also a Muslim Women’s body known as Alasalatu Nuratu Deen Society with members drawn from wives of members of staff and other female members of the congregation.
+The day-to-day administration of the Mosque is done by an Executive Council. This Council is responsible to the Governing Board, which comprises representatives of Muslim members of staff and students and outsiders representing off-campus constituencies.</string>
+    <string name="religious_centres_website">https://www.ui.edu.ng/students_affairs</string>
+
+    <!--Shopping Centres: Places and Addresses-->
+    <string name="shopping_centres">ShopRite</string>
+    <string name="shopping_centres_address"> Ibadan Mall, MKO Abiola Way, 100001.</string>
+    <string name="shopping_centres_details">Supermarket chain with brand-name and house-label groceries, a bakery and a deli. Many have pharmacies.</string>
+    <string name="shopping_centres_website">https://www.shoprite.co.za/</string>
+</resources>
+

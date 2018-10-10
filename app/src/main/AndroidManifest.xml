@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.goibaban">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ibadan_image"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ibadan_image"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".AccommodationListActivity"
+            android:label="@string/accommodation"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme1">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name=".GovtOfficesListActivity"
+            android:label="@string/govt"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme1">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name=".AttractionListActivity"
+            android:label="@string/attraction"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme1">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="Main2Activity" />
+        </activity>
+        <activity
+            android:name=".ReligiousCentresListActivity"
+            android:label="@string/religion"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme1">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name=".HospitalsListActivity"
+            android:label="@string/health"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme1">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name=".ShoppingCentresListActivity"
+            android:label="@string/shopping"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme1">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name=".FullInformationActivity"
+            android:label="@string/info"
+            android:theme="@style/AppTheme1" />
+    </application>
+
+</manifest>
