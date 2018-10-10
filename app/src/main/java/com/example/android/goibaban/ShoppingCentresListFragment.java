@@ -1,20 +1,33 @@
 package com.example.android.goibaban;
 
+
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ShoppingCentresListActivity extends AppCompatActivity {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class ShoppingCentresListFragment extends Fragment {
+
+
+    public ShoppingCentresListFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.list, container, false);
+
 
         final ArrayList<Ibadan> ibadans = new ArrayList<Ibadan>();
 
@@ -26,9 +39,9 @@ public class ShoppingCentresListActivity extends AppCompatActivity {
         ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
         ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
 
-        ListAdapter adapter = new ListAdapter(this, ibadans);
+        ListAdapter adapter = new ListAdapter(getActivity(), ibadans);
 
-        ListView listView = (ListView) findViewById(R.id.list_view);
+        ListView listView = (ListView) rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(adapter);
 
@@ -44,7 +57,7 @@ public class ShoppingCentresListActivity extends AppCompatActivity {
                 String details = currentItem.getItemDetails();
 
 
-                Intent toAccommodationActivityIntent = new Intent(ShoppingCentresListActivity.this, FullInformationActivity.class);
+                Intent toAccommodationActivityIntent = new Intent(getActivity(), FullInformationActivity.class);
                 toAccommodationActivityIntent.putExtra("picture", itemPicture);
                 toAccommodationActivityIntent.putExtra("item", item);
                 toAccommodationActivityIntent.putExtra("address", address);
@@ -53,5 +66,7 @@ public class ShoppingCentresListActivity extends AppCompatActivity {
                 startActivity(toAccommodationActivityIntent);
             }
         });
+        return rootView;
     }
+
 }

@@ -1,29 +1,32 @@
 package com.example.android.goibaban;
 
+
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class GovtOfficesListActivity extends AppCompatActivity {
-    String newItem = "";
-    String newItemAddress = "";
-    String newItemWebsite = "";
-    String newItemBriefDescription = "";
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class GovtOfficesListFragment extends Fragment {
+
+
+    public GovtOfficesListFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list);
-
-       /* newItem = getIntent().getExtras().getString("item");
-        newItemAddress = getIntent().getExtras().getString("itemAddress");
-        newItemWebsite = getIntent().getExtras().getString("itemWebsite");
-        newItemBriefDescription = getIntent().getExtras().getString("itemBriefDescription");*/
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.list, container, false);
 
         final ArrayList<Ibadan> ibadans = new ArrayList<Ibadan>();
 //        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, newItem, newItemAddress, newItemWebsite, newItemBriefDescription));
@@ -36,9 +39,9 @@ public class GovtOfficesListActivity extends AppCompatActivity {
         ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
 
 
-        ListAdapter adapter = new ListAdapter(this, ibadans);
+        ListAdapter adapter = new ListAdapter(getActivity(), ibadans);
 
-        ListView listView = (ListView) findViewById(R.id.list_view);
+        ListView listView = (ListView) rootView.findViewById(R.id.list_view);
 
         listView.setAdapter(adapter);
 
@@ -54,7 +57,7 @@ public class GovtOfficesListActivity extends AppCompatActivity {
                 String details = currentItem.getItemDetails();
 
 
-                Intent toAccommodationActivityIntent = new Intent(GovtOfficesListActivity.this, FullInformationActivity.class);
+                Intent toAccommodationActivityIntent = new Intent(getActivity(), FullInformationActivity.class);
                 toAccommodationActivityIntent.putExtra("picture", itemPicture);
                 toAccommodationActivityIntent.putExtra("item", item);
                 toAccommodationActivityIntent.putExtra("address", address);
@@ -63,5 +66,7 @@ public class GovtOfficesListActivity extends AppCompatActivity {
                 startActivity(toAccommodationActivityIntent);
             }
         });
+        return  rootView;
     }
+
 }

@@ -55,23 +55,23 @@ public class HomeFragment extends Fragment {
                 String category = currentItem.getCategory();
 //                Check the type of category clicked and bring on the appropriate activity
                 if (category == getString(R.string.govt).toString()) {
-                    Intent govtIntent = new Intent(getActivity(), GovtOfficesListActivity.class);
+                    Intent govtIntent = new Intent(getActivity(), GovtOfficesListFragment.class);
                     startActivity(govtIntent);
                 } else if (category == getString(R.string.attraction).toString()) {
-                    Intent attractionIntent = new Intent(getActivity(), AttractionListActivity.class);
+                    Intent attractionIntent = new Intent(getActivity(), AttractionListFragment.class);
 
                     startActivity(attractionIntent);
                 } else if (category == getString(R.string.accommodation).toString()) {
-                    Intent accommodationIntent = new Intent(getActivity(), AccommodationListActivity.class);
+                    Intent accommodationIntent = new Intent(getActivity(), AccommodationListFragment.class);
                     startActivity(accommodationIntent);
                 } else if (category == getString(R.string.religion).toString()) {
-                    Intent religionIntent = new Intent(getActivity(), ReligiousCentresListActivity.class);
+                    Intent religionIntent = new Intent(getActivity(), ReligiousCentresListFragment.class);
                     startActivity(religionIntent);
                 } else if (category == getString(R.string.health).toString()) {
-                    Intent healthIntent = new Intent(getActivity(), HospitalsListActivity.class);
+                    Intent healthIntent = new Intent(getActivity(), HospitalsListFragment.class);
                     startActivity(healthIntent);
                 } else if (category == getString(R.string.shopping).toString()) {
-                    Intent shoppingIntent = new Intent(getActivity(), ShoppingCentresListActivity.class);
+                    Intent shoppingIntent = new Intent(getActivity(), ShoppingCentresListFragment.class);
                     startActivity(shoppingIntent);
                 }
             }
