@@ -18,10 +18,6 @@
         </activity>
         <activity android:name=".Main2Activity"
             android:theme="@style/AppTheme"></activity>
-        <activity
-            android:name=".FullInformationActivity"
-            android:label="@string/info"
-            android:theme="@style/AppTheme1" />
     </application>
 
 </manifest>

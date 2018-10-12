@@ -1,14 +1,14 @@
 package com.example.android.goibaban;
 
 
-import android.support.v4.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -48,25 +48,19 @@ public class AccommodationListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Ibadan currentItem = ibadans.get(position);
+                String item = currentItem.getItem();
 
-                int itemPicture = currentItem.getItemPicture();
+                Toast.makeText(getActivity(), "You clicked on " + item, Toast.LENGTH_SHORT).show();
+                /*int itemPicture = currentItem.getItemPicture();
                 String item = currentItem.getItem();
                 String address = currentItem.getItemAddress();
                 String website = currentItem.getItemWebsite();
-                String details = currentItem.getItemDetails();
+                String details = currentItem.getItemDetails();*/
 
 
-                Intent toAccommodationActivityIntent = new Intent(getActivity(), FullInformationActivity.class);
-                toAccommodationActivityIntent.putExtra("picture", itemPicture);
-                toAccommodationActivityIntent.putExtra("item", item);
-                toAccommodationActivityIntent.putExtra("address", address);
-                toAccommodationActivityIntent.putExtra("website", website);
-                toAccommodationActivityIntent.putExtra("info", details);
-                startActivity(toAccommodationActivityIntent);
             }
         });
 
         return rootView;
     }
-
 }

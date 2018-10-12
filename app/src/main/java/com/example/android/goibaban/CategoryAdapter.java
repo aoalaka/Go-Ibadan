@@ -8,7 +8,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 
 public class CategoryAdapter extends FragmentPagerAdapter {
-//    private String tabTitles[] = new String[] { "Numbers", "Family", "Colors", "Phrases" };
+    private String tabTitles[] = new String[] { "Govt offices", "Top Attraction", "Accommodation",
+                            "Religious Centres", "Hospitals", "Shopping Centres"};
     private Context context;
     public CategoryAdapter(FragmentManager fm, Context context) {
         super(fm);
@@ -44,9 +45,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         return 6;
     }
 
-/*    @Override
+    @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
         return tabTitles[position];
-    }*/
+    }
 }
