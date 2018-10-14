@@ -30,13 +30,20 @@ public class HospitalsListFragment extends Fragment {
 
         final ArrayList<Ibadan> ibadans = new ArrayList<Ibadan>();
 
-        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(), getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(), getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(), getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(), getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(), getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(), getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(), getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(),
+                getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(),
+                getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(),
+                getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(),
+                getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(),
+                getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(),
+                getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.uch_ibadan, getString(R.string.uch).toString(), getString(R.string.uch_address).toString(),
+                getString(R.string.uch_website).toString(), getString(R.string.uch_details).toString()));
 
         ListAdapter adapter = new ListAdapter(getActivity(), ibadans);
 

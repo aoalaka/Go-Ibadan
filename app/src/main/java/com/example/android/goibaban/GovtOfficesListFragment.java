@@ -30,13 +30,20 @@ public class GovtOfficesListFragment extends Fragment {
 
         final ArrayList<Ibadan> ibadans = new ArrayList<Ibadan>();
 //        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, newItem, newItemAddress, newItemWebsite, newItemBriefDescription));
-        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(), getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(),
+                getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(),
+                getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(),
+                getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(),
+                getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(),
+                getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(),
+                getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.oyo_state_secretariat, getString(R.string.state_secretariat).toString(), getString(R.string.state_secretariat_address).toString(),
+                getString(R.string.state_secretariat_website).toString(), getString(R.string.state_secretariat_details).toString()));
 
 
         ListAdapter adapter = new ListAdapter(getActivity(), ibadans);

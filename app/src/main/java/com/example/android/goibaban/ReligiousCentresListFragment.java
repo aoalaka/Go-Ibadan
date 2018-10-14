@@ -30,13 +30,20 @@ public class ReligiousCentresListFragment extends Fragment {
 
         final ArrayList<Ibadan> ibadans = new ArrayList<Ibadan>();
 
-        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(), getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(), getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(), getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(), getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(), getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(), getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(), getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(),
+                getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(),
+                getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(),
+                getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(),
+                getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(),
+                getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(),
+                getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.university_of_ibadan_mosque, getString(R.string.religious_centres).toString(), getString(R.string.religious_centres_address).toString(),
+                getString(R.string.religious_centres_website).toString(), getString(R.string.religious_centres_details).toString()));
 
         ListAdapter adapter = new ListAdapter(getActivity(), ibadans);
 

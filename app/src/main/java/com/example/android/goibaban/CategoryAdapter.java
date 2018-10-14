@@ -8,7 +8,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 
 public class CategoryAdapter extends FragmentPagerAdapter {
-    private String tabTitles[] = new String[] { "Govt offices", "Top Attraction", "Accommodation",
+    private String tabTitles[] = new String[] { "Govt offices", "Accommodation", "Top Attraction",
                             "Religious Centres", "Hospitals", "Shopping Centres"};
     private Context context;
     public CategoryAdapter(FragmentManager fm, Context context) {

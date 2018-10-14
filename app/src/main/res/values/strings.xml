@@ -74,5 +74,8 @@ The day-to-day administration of the Mosque is done by an Executive Council. Thi
     <string name="shopping_centres_address"> Ibadan Mall, MKO Abiola Way, 100001.</string>
     <string name="shopping_centres_details">Supermarket chain with brand-name and house-label groceries, a bakery and a deli. Many have pharmacies.</string>
     <string name="shopping_centres_website">https://www.shoprite.co.za/</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_details">DetailsActivity</string>
 </resources>
 

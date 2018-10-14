@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
 public class Main2Activity extends AppCompatActivity {
+    private HomeFragment homeFragment;
     private DrawerLayout mDrawer;
     private Toolbar toolbar;
     private NavigationView nvDrawer;
@@ -41,6 +42,20 @@ public class Main2Activity extends AppCompatActivity {
         nvDrawer = (NavigationView) findViewById(R.id.nvView);
         // Setup drawer view
         setupDrawerContent(nvDrawer);
+
+        homeFragment = new HomeFragment();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.flContent, homeFragment)
+                .commit();
+
+        /*Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        Ibadan selectedItem = bundle.getParcelable("Selected Item");*/
+
+        /*Intent intentToDetailsActivity = new Intent(Main2Activity.this,
+                DetailsActivity.class);
+        intent.putExtra("Selected Item", selectedItem);
+        startActivity(intentToDetailsActivity);*/
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
@@ -104,4 +119,14 @@ public class Main2Activity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+/*    @Override
+    public void onSelectItemPicture(int itemPicture) {
+
+    }
+
+    @Override
+    public void onSelectItemDetails(String[] itemFullDetails) {
+
+    }*/
 }

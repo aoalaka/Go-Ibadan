@@ -31,13 +31,20 @@ public class ShoppingCentresListFragment extends Fragment {
 
         final ArrayList<Ibadan> ibadans = new ArrayList<Ibadan>();
 
-        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(), getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(),
+                getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(),
+                getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(),
+                getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(),
+                getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(),
+                getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(),
+                getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.shoprite_ibadan, getString(R.string.shopping_centres).toString(), getString(R.string.shopping_centres_address).toString(),
+                getString(R.string.shopping_centres_website).toString(), getString(R.string.shopping_centres_details).toString()));
 
         ListAdapter adapter = new ListAdapter(getActivity(), ibadans);
 

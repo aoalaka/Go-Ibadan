@@ -1,46 +1,46 @@
 package com.example.android.goibaban;
 
-public class Ibadan {
-    private int mCategoryImage;
-    private String mCategory;
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Ibadan implements Parcelable {
+    private int mItemPicture;
     private String mItem;
     private String mItemAddress;
-    private int mItemPicture;
-    private String mItemDetails;
     private String mItemWebsite;
+    private String mItemDetails;
 
 
-    public Ibadan(int mCategoryImage, String mCategory) {
-        this.mCategoryImage = mCategoryImage;
-        this.mCategory = mCategory;
-
+    public Ibadan(Parcel in) {
+        mItemPicture = in.readInt();
+        mItem = in.readString();
+        mItemAddress = in.readString();
+        mItemWebsite = in.readString();
+        mItemDetails = in.readString();
     }
 
-    public Ibadan(int mCategoryImage, String mItem, String mItemAddress) {
 
-        this.mItem = mItem;
-        this.mItemAddress = mItemAddress;
-        this.mCategoryImage = mCategoryImage;
-    }
+    // This is to de-serialize the object
+    public static final Parcelable.Creator<Ibadan> CREATOR = new Parcelable.Creator<Ibadan>() {
+        public Ibadan createFromParcel(Parcel in) {
+            return new Ibadan(in);
+        }
+
+        public Ibadan[] newArray(int size) {
+            return new Ibadan[size];
+        }
+    };
 
     public Ibadan(int mItemPicture, String mItem, String mItemAddress, String mItemWebsite, String mItemDetails) {
+        this.mItemPicture = mItemPicture;
         this.mItem = mItem;
         this.mItemAddress = mItemAddress;
-        this.mItemPicture = mItemPicture;
-        this.mItemDetails = mItemDetails;
         this.mItemWebsite = mItemWebsite;
-    }
-
-    public int getCategoryImage() {
-        return mCategoryImage;
+        this.mItemDetails = mItemDetails;
     }
 
     public String getItem() {
         return mItem;
-    }
-
-    public String getCategory() {
-        return mCategory;
     }
 
     public String getItemAddress() {
@@ -58,4 +58,18 @@ public class Ibadan {
     public String getItemWebsite() {
         return mItemWebsite;
     }
+
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(mItemPicture);
+        parcel.writeString(mItem);
+        parcel.writeString(mItemAddress);
+        parcel.writeString(mItemWebsite);
+        parcel.writeString(mItemDetails);
+    }
+
 }

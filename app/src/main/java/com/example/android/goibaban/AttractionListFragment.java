@@ -29,13 +29,20 @@ public class AttractionListFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.list, container, false);
         final ArrayList<Ibadan> ibadans = new ArrayList<Ibadan>();
 
-        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(), getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(), getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(), getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(), getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(), getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(), getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
-        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(), getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(),
+                getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(),
+                getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(),
+                getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(),
+                getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(),
+                getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(),
+                getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
+        ibadans.add(new Ibadan(R.drawable.cocoa_house, getString(R.string.cocoa_house).toString(), getString(R.string.cocoa_house_address).toString(),
+                getString(R.string.cocoa_house_website).toString(), getString(R.string.cocoa_house_details).toString()));
 
         ListAdapter adapter = new ListAdapter(getActivity(), ibadans);
 
