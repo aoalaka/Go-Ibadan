@@ -69,10 +69,10 @@ public class AccommodationListFragment extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putParcelable("Selected Item", currentItem);
 
-                Intent intent = new Intent(getActivity().getBaseContext(),
+                Intent intent = new Intent(getActivity(),
                         DetailsActivity.class);
                 intent.putExtra("Selected Item", bundle);
-                getActivity().startActivity(intent);
+                startActivity(intent);
             }
         });
 

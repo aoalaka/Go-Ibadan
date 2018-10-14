@@ -2,10 +2,10 @@ package com.example.android.goibaban;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 
 
-public class DetailsActivity extends AppCompatActivity {
+public class DetailsActivity extends FragmentActivity {
 
 
     @Override
@@ -24,7 +24,7 @@ public class DetailsActivity extends AppCompatActivity {
         DetailsActivityFragment detailsActivityFragment = new DetailsActivityFragment();
 
         Bundle bundleToFragment = new Bundle();
-        bundle.putParcelable("Selected Item", selectedItem);
+        bundleToFragment.putParcelable("Selected Item", selectedItem);
         detailsActivityFragment.setArguments(bundleToFragment);
         // 2. Commit the fragment.
         getSupportFragmentManager().beginTransaction()
