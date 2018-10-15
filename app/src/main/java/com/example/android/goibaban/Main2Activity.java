@@ -3,9 +3,11 @@ package com.example.android.goibaban;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -43,18 +45,28 @@ public class Main2Activity extends AppCompatActivity {
         // Setup drawer view
         setupDrawerContent(nvDrawer);
 
-        homeFragment = new HomeFragment();
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+
+        // Create an adapter that knows which fragment should be shown on each page
+        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager(), Main2Activity.this);
+
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
+
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
+
+        /*homeFragment = new HomeFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.flContent, homeFragment)
-                .commit();
+                .commit();*/
 
-        /*Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        Ibadan selectedItem = bundle.getParcelable("Selected Item");*/
+        /*Ibadan selectedItem = getIntent().getExtras().getParcelable("Selected Item");
 
-        /*Intent intentToDetailsActivity = new Intent(Main2Activity.this,
+        Intent intentToDetailsActivity = new Intent(Main2Activity.this,
                 DetailsActivity.class);
-        intent.putExtra("Selected Item", selectedItem);
+        intentToDetailsActivity.putExtra("Selected Item", selectedItem);
         startActivity(intentToDetailsActivity);*/
     }
 

@@ -1,6 +1,5 @@
 package com.example.android.goibaban;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -16,9 +15,8 @@ public class DetailsActivity extends FragmentActivity {
        /* Intent intent = getIntent();
         Ibadan selectedItem = (Ibadan) intent.getParcelableExtra("Selected Item");*/
 
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        Ibadan selectedItem = bundle.getParcelable("Selected Item");
+
+        Ibadan selectedItem = getIntent().getExtras().getParcelable("Selected Item");
 
         // 1. Parse the object to the fragment as a bundle;
         DetailsActivityFragment detailsActivityFragment = new DetailsActivityFragment();

@@ -64,15 +64,13 @@ public class AccommodationListFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 Ibadan currentItem = ibadans.get(position);
 
-                Bundle bundle = new Bundle();
-                bundle.putParcelable("Selected Item", currentItem);
-
-                Intent intent = new Intent(getActivity(),
+                Intent intent = new Intent(getActivity().getBaseContext(),
                         DetailsActivity.class);
-                intent.putExtra("Selected Item", bundle);
-                startActivity(intent);
+                intent.putExtra("Selected Item", currentItem);
+                getActivity().startActivity(intent);
             }
         });
 
