@@ -1,6 +1,7 @@
 package com.example.android.goibaban;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -54,14 +54,12 @@ public class AttractionListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Ibadan currentItem = ibadans.get(position);
-                String item = currentItem.getItem();
 
-                Toast.makeText(getActivity(), "You clicked on " + item, Toast.LENGTH_SHORT).show();
-                /*int itemPicture = currentItem.getItemPicture();
-                String item = currentItem.getItem();
-                String address = currentItem.getItemAddress();
-                String website = currentItem.getItemWebsite();
-                String details = currentItem.getItemDetails();*/
+
+                Intent intent = new Intent(getActivity().getBaseContext(),
+                        DetailsActivity.class);
+                intent.putExtra("Selected Item", currentItem);
+                getActivity().startActivity(intent);
 
 
 

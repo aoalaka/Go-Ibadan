@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Listen to Ibadan Anthem"
+            android:text="@string/anthem"
             android:textAlignment="center"
             android:paddingBottom="16dp"
             android:textStyle="bold"
@@ -28,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="play" />
+            android:text="@string/play"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 

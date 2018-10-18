@@ -12,6 +12,22 @@
 
     <string name="home_label">Home</string>
 
+    <string name="anthem">Listen to Ibadan Anthem</string>
+
+    <string name="play">play</string>
+
+    <string name="Place">New Place</string>
+
+    <string name="address">Address</string>
+
+    <string name="website">Website</string>
+
+    <string name="brief">Brief Description</string>
+
+    <string name="upload_image">upload image</string>
+
+    <string name="add_btn">add</string>
+
     <!--HomePage menu list-->
     <string name="govt">Government Offices</string>
     <string name="attraction">Top Attractions</string>
@@ -50,7 +66,7 @@ The building itself house offices for major firms and broadcasting outfits. The 
     <string name="cocoa_house_website">http://www.oduainvestment.com.ng/locations/cocoa-house-ibadan/</string>
     <!--Hospitals: Places and Addresses-->
 
-    <string name="uch"> University College Hospital (UCH), Ibadan</string>
+    <string name="uch"> University College Hospital</string>
     <string name="uch_address">UCH Road.</string>
     <string name="uch_details">The University College Hospital, (UCH) Ibadan was established by an August 1952 Act of Parliament in response to the need for the training of medical personnel and other healthcare professionals for the country and the West African Sub-Region. The establishment of the Hospital followed a Visitation Panel in 1951 to assess the clinical facilities for the clinical postings of medical students registered for M.B.B.S. degree of the University of London. The visitation panel, led by Dr. T.F. Hunt of the University of London rejected the enhanced facilities provided by the Government/Native Authority Hospital at Adeoyo, Ibadan following the establishment of a Faculty of Medicine in the University College, Ibadan (now University of Ibadan) in 1948.
         The University College Hospital (UCH) was strategically located in Ibadan, then the largest city in West Africa which is also the seat of the first University in Nigeria. The physical development of the Hospital commenced in 1953 in its present site and was formally commissioned after completion on 20 November 1957. The University College Hospital, Ibadan was initially commissioned with 500-bed spaces. Currently, the hospital has 1,000 bed spaces and 200 examination couches with occupancy rates ranging from 65-70%. In addition to undergraduate medical programme (Based in the College of Medicine of the University of Ibadan), the UCH also provides for: Postgraduate Residency Training Programmes in all specialties of Internal Medicine, Surgery, Obstetrics and Gynecology, Pediatrics, Otorhinolaryngology, Ophthalmology, Anesthesia, Laboratory Medicine, Psychiatry, Community Medicine, General Medical Practice, Radiology, Radiotherapy and Dentistry. The University College Hospital also provides diploma /professional programmes in the School of Health Records and Statistics, Environmental Health Officers Tutors Course; Primary Health tutors Course, Nurse/Midwife/Public Health Nurse, Nurse Tutors Course, Post registration Courses in nursing e.g. Peri Operative nursing and Occupational Health Nursing.

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,19 +15,21 @@
             android:id="@+id/place_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Place"
+            android:hint="@string/Place"
             android:inputType="text" />
+
         <EditText
             android:id="@+id/address_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address"
+            android:hint="@string/address"
             android:inputType="text" />
+
         <EditText
             android:id="@+id/website_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Website"
+            android:hint="@string/website"
             android:inputType="text" />
 
         <RadioGroup
@@ -38,37 +41,37 @@
                 android:id="@+id/govt_office"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Government Office" />
+                android:text="@string/govt" />
 
             <RadioButton
                 android:id="@+id/attraction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Top Attraction" />
+                android:text="@string/attraction" />
 
             <RadioButton
                 android:id="@+id/accommodation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Accommodation" />
+                android:text="@string/accommodation" />
 
             <RadioButton
                 android:id="@+id/religion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Religious Centre" />
+                android:text="@string/religion" />
 
             <RadioButton
                 android:id="@+id/hospital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hospital" />
+                android:text="@string/health" />
 
             <RadioButton
                 android:id="@+id/shopping"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shopping Centre" />
+                android:text="@string/shopping" />
 
         </RadioGroup>
 
@@ -76,19 +79,23 @@
             android:id="@+id/brief_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Brief Description"
+            android:hint="@string/brief"
             android:inputType="textMultiLine" />
 
         <Button
             android:id="@+id/image_upload_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="upload image" />
+            android:text="@string/upload_image"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/add_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="add" />
+            android:text="@string/add_btn"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 </ScrollView>

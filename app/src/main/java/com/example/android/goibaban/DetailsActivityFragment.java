@@ -30,11 +30,7 @@ public class DetailsActivityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Bundle bundle = this.getArguments();
-
-        if (bundle != null) {
-            selectedItem = bundle.getParcelable("Selected Item");
-        }
+      selectedItem = getActivity().getIntent().getParcelableExtra("Selected Item");
 
         final View rootView = inflater.inflate(R.layout.fragment_details, container, false);
 
