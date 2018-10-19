@@ -8,14 +8,13 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 
 public class CategoryAdapter extends FragmentPagerAdapter {
-    private String tabTitles[] = new String[] {"Govt offices", "Accommodation", "Top Attraction",
-                            "Religious Centres", "Hospitals", "Shopping Centres"};
     private Context context;
     public CategoryAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
     }
-
+    private String tabTitles[] = new String[] {context.getString(R.string.govt), context.getString(R.string.accommodation), context.getString(R.string.attraction),
+            context.getString(R.string.religion), context.getString(R.string.health), context.getString(R.string.shopping)};
 
     /**
      * Return the {@link Fragment} that should be displayed for the given page number.
