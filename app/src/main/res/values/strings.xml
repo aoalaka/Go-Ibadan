@@ -28,6 +28,15 @@
 
     <string name="add_btn">add</string>
 
+    <string-array name="tab_titles_array">
+        <item>Government Offices</item>
+        <item>Accommodation</item>
+        <item>Top Attractions</item>
+        <item>Religious Centres</item>
+        <item>Hospitals</item>
+        <item>Shopping Centres</item>
+    </string-array>
+
     <!--HomePage menu list-->
     <string name="govt">Government Offices</string>
     <string name="attraction">Top Attractions</string>

@@ -6,15 +6,20 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 
-
 public class CategoryAdapter extends FragmentPagerAdapter {
-    private Context context;
+
+   Context context;
+   String[] tabTitles;
+
     public CategoryAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
+        tabTitles = new String[]{context.getString(R.string.govt), context.getString(R.string.accommodation), context.getString(R.string.attraction),
+                context.getString(R.string.religion), context.getString(R.string.health), context.getString(R.string.shopping)};
     }
-    private String tabTitles[] = new String[] {context.getString(R.string.govt), context.getString(R.string.accommodation), context.getString(R.string.attraction),
-            context.getString(R.string.religion), context.getString(R.string.health), context.getString(R.string.shopping)};
+    /*Resources res = context.getResources();
+
+    private String[] tabTitles = res.getStringArray(R.array.tab_titles_array);*/
 
     /**
      * Return the {@link Fragment} that should be displayed for the given page number.
